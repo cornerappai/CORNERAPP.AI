@@ -1093,67 +1093,262 @@ section {
 }
 
 /* ===== RESPONSIVE ===== */
+/* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 920px) {
+  /* Header */
   .site-header {
-    padding: 20px 24px;
+    padding: 5px 24px;
+  }
+
+  .logo {
+    height: 100px !important;
+  }
+
+  .btn-glow {
+    height: 17px;
+    padding: 0 10px;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .badge-dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Hero Section */
+  .hero {
+    min-height: auto;
+    padding: 120px 20px 60px;
+    margin-top: 0;
   }
 
   .hero-inner {
-    grid-template-columns: 1fr;
-    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
   }
 
-  .hero-right {
-    order: -1;
+  .badge {
+    font-size: 11px;
+    padding: 6px 12px;
   }
 
-  .banner-card {
-    max-width: 400px;
-    margin: 0 auto;
+  .badge-dot {
+    width: 6px;
+    height: 6px;
   }
 
   .title {
-    text-align: center;
+    font-size: 48px;
+    line-height: 1.1;
   }
 
   .subtitle {
-    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   .form-row {
     flex-direction: column;
+    gap: 12px;
+  }
+
+  .input-glow,
+  .btn-primary {
+    width: 100%;
   }
 
   .micro {
-    text-align: center;
+    font-size: 12px;
   }
 
+  .scroll-indicator {
+    display: none;
+  }
+
+  /* Sections */
   section {
-    padding: 80px 24px;
+    padding: 60px 20px;
+  }
+
+  .section-tag {
+    font-size: 10px;
+  }
+
+  .section-title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .section-lead {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* Stats Grid */
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 48px;
+  }
+
+  /* Problem Section */
+  .problem-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .problem-card h3 {
+    font-size: 20px;
+  }
+
+  .problem-card p {
+    font-size: 13px;
+  }
+
+  /* Solution Section */
+  .solution-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .solution-number {
+    font-size: 14px;
+  }
+
+  .solution-card h3 {
+    font-size: 20px;
+  }
+
+  .solution-card p {
+    font-size: 14px;
+  }
+
+  /* Vision Section */
+  .vision-title {
+    font-size: 32px;
+  }
+
+  .vision-text {
+    font-size: 15px;
+  }
+
+  .vision-stats {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Notify Section */
+  .notify-section {
+    padding: 80px 20px;
+  }
+
+  .notify-title {
+    font-size: 36px;
+  }
+
+  .notify-subtitle {
+    font-size: 15px;
   }
 
   .form-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .btn-submit {
+    padding: 16px 24px;
+    font-size: 15px;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 40px 20px 30px;
   }
 
   .footer-inner {
-    grid-template-columns: 1fr;
-    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 32px;
+  }
+
+  .founder-block,
+  .company-block {
+    width: 100%;
+  }
+
+  .founder-block {
+    gap: 16px;
+  }
+
+  .company-block {
+    gap: 20px;
   }
 
   .founder-profile {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
-  .company-header {
-    justify-content: center;
+  .info-section {
+    margin-bottom: 0;
   }
 
+  .info-section h4 {
+    font-size: 9px;
+    margin-bottom: 6px;
+  }
+
+  .info-section p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .founder-name {
+    font-size: 15px;
+  }
+
+  .founder-role {
+    font-size: 11px;
+  }
+
+  .avatar-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .social-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Sticky Notify */
   .sticky-notify {
     right: 20px;
     bottom: 20px;
+    padding: 12px 20px;
+    font-size: 13px;
   }
 
+  /* Disable Custom Cursor */
   body {
     cursor: auto;
   }
@@ -1161,6 +1356,63 @@ section {
   .cursor-dot,
   .cursor-outline {
     display: none;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .logo {
+    height: 90px !important;
+  }
+
+  .btn-glow {
+    height: 15px;
+    padding: 0 8px;
+    font-size: 8px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .notify-title,
+  .vision-title {
+    font-size: 28px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+  .info-section h4 {
+    font-size: 8px;
+  }
+
+  .info-section p {
+    font-size: 11px;
+  }
+
+  .founder-name {
+    font-size: 14px;
+  }
+
+  .avatar-img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .social-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .social-btn svg {
+    width: 16px;
+    height: 16px;
   }
 }
 
