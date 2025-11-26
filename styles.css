@@ -937,6 +937,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  margin-top: -4px;
 }
 
 .company-header {
