@@ -85,7 +85,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 28px 48px;
+  padding: 14px 48px;
   position: fixed;
   top: 0;
   left: 0;
@@ -95,6 +95,22 @@ body {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   animation: slideDown 0.6s ease;
+}
+
+.nav-left {
+  flex: 1;
+}
+
+.logo-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @keyframes slideDown {
@@ -109,7 +125,7 @@ body {
 }
 
 .logo {
-  height: 44px;
+  height: 99px;
   filter: drop-shadow(0 8px 30px rgba(185, 255, 107, 0.15));
   transition: transform 0.3s ease;
 }
@@ -155,16 +171,21 @@ body {
 }
 
 .btn-glow {
-  background: linear-gradient(90deg, rgba(185, 255, 107, 0.1), rgba(11, 11, 11, 0.3));
-  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(185, 255, 107, 0.08);
   border: 1px solid rgba(185, 255, 107, 0.2);
-  padding: 12px 24px;
-  border-radius: 12px;
-  font-weight: 800;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
+  text-transform: uppercase;
 }
 
 .btn-glow-effect {
@@ -178,6 +199,7 @@ body {
 .btn-glow:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 48px rgba(185, 255, 107, 0.3);
+  background: rgba(185, 255, 107, 0.12);
 }
 
 .btn-glow:hover .btn-glow-effect {

@@ -17,21 +17,19 @@
 
     <div class="page-wrap">
       <!-- Header -->
-      <header class="site-header">
-        <div class="logo-wrap">
-          <img src="ASSET/CORNEROFFICIALLOGO.png" alt="Corner logo" class="logo" />
-        </div>
-        <nav class="nav-actions">
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#vision">Vision</a>
-          <button class="btn-glow" id="notifyTopBtn">
-            <span>Notify me</span>
-            <div class="btn-glow-effect"></div>
-          </button>
-        </nav>
-      </header>
-
-      <main>
+    <header class="site-header">
+      <div class="nav-left"></div>
+      <div class="logo-wrap">
+        <img src="ASSET/CORNEROFFICIALLOGO.png" alt="Corner logo" class="logo" />
+      </div>
+      <nav class="nav-right">
+        <button class="btn-glow" id="notifyTopBtn">
+          <span class="badge-dot"></span>
+          <span>Notify Me</span>
+          <div class="btn-glow-effect"></div>
+        </button>
+      </nav>
+    </header>      <main>
         <!-- HERO SECTION -->
         <section class="hero">
           <div class="hero-bg"></div>
@@ -55,8 +53,7 @@
                 A full-stack platform for social networking, verified portfolios, pre-set interval timers, AI leveraging, and movement analytics. <span class="text-glow">built for fighters.</span>
               </p>
 
-              <form name="notify" method="POST" data-netlify="true" class="notify-form" id="notifyForm">
-                <input type="hidden" name="form-name" value="notify" />
+              <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="notify-form" id="notifyForm">
                 <div class="form-row">
                   <input class="input-glow" type="email" name="email" placeholder="your@email.com" required />
                   <button class="btn-primary" type="submit">
@@ -68,14 +65,7 @@
                 </div>
               </form>
 
-              <p class="micro">No spam. Only launch updates. 🔥</p>
-            </div>
-
-            <div class="hero-right">
-              <div class="banner-card" id="floatCard">
-                <div class="card-glow"></div>
-                <img src="ASSET/VISTAPRINT-removebg-preview.png" alt="Banner" />
-              </div>
+              <p class="micro">No spam. Only launch updates.</p>
             </div>
           </div>
 
@@ -101,17 +91,14 @@
 
             <div class="stats-grid">
               <div class="stat-card">
-                <div class="stat-icon">🥊</div>
                 <div class="stat-number">3</div>
                 <div class="stat-label">Account Types</div>
               </div>
               <div class="stat-card">
-                <div class="stat-icon">⚡</div>
                 <div class="stat-number">∞</div>
                 <div class="stat-label">Possibilities</div>
               </div>
               <div class="stat-card">
-                <div class="stat-icon">🌍</div>
                 <div class="stat-number">1</div>
                 <div class="stat-label">Platform</div>
               </div>
@@ -138,21 +125,18 @@
 
             <div class="problem-grid">
               <div class="problem-card">
-                <div class="problem-icon">🥊</div>
                 <h3>Athletes</h3>
                 <p>No structure • No visibility • No stable income</p>
                 <div class="card-shine"></div>
               </div>
 
               <div class="problem-card">
-                <div class="problem-icon">🎯</div>
                 <h3>Coaches</h3>
                 <p>Unorganised students • No digital platform • Limited monetisation</p>
                 <div class="card-shine"></div>
               </div>
 
               <div class="problem-card">
-                <div class="problem-icon">🏢</div>
                 <h3>Brands</h3>
                 <p>Fake followers • Unclear results • No access to verified athletes</p>
                 <div class="card-shine"></div>
@@ -250,8 +234,7 @@
                 We're building in public. Get notified when CORNER launches — exclusive early access for the community.
               </p>
 
-              <form name="notify-2" method="POST" data-netlify="true" class="notify-form-large" id="notifyForm2">
-                <input type="hidden" name="form-name" value="notify-2" />
+              <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="notify-form-large" id="notifyForm2">
                 <div class="form-grid">
                   <input class="input-large" type="text" name="name" placeholder="Your name" />
                   <input class="input-large" type="email" name="email" placeholder="your@email.com" required />
@@ -276,14 +259,16 @@
           <!-- Left Side: Founder Block -->
           <div class="footer-left">
             <div class="founder-block">
-              <h3 class="founder-title">ABOUT THE FOUNDER</h3>
-              <p class="founder-bio">
-                I'm Nikhil Marathe, a 19 year old Gen-Z solo founder building CORNER from the ground up.
-                No big team. No funding. Just obsession, discipline, and a fighter's mentality.
-              </p>
-              <p class="founder-mission">
-                I'm building CORNER because the combat sports world deserves the structure I never had and I'm willing to give my life to make it real.
-              </p>
+              <div class="info-section">
+                <h4>ABOUT THE FOUNDER</h4>
+                <p>I'm Nikhil Marathe, a 19 year old Gen-Z solo founder building CORNER from the ground up. No big team. No funding. Just obsession, discipline, and a fighter's mentality.</p>
+              </div>
+              
+              <div class="info-section">
+                <h4>WHY?</h4>
+                <p>I'm building CORNER because the combat sports world deserves the structure I never had and I'm willing to give my life to make it real.</p>
+              </div>
+              
               <div class="founder-profile">
                 <div class="founder-avatar">
                   <img src="ASSET/PFP.png" alt="Nikhil Marathe" class="avatar-img" />
@@ -299,11 +284,6 @@
           <!-- Right Side: Company + Legal Block -->
           <div class="footer-right">
             <div class="company-block">
-              <div class="company-header">
-                
-                <img src="ASSET/CORNEROFFICIALLOGO.png" alt="CORNER logo" class="company-logo-main" />
-              </div>
-              
               <div class="company-info">
                 <div class="info-section">
                   <h4>Current Status</h4>
